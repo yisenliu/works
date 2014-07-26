@@ -1,0 +1,71 @@
+/*======================================================================== 
+	Copyright: 劉政皇
+	Author: 劉政皇
+	yisenliu@gmail.com
+  ========================================================================*/
+
+/*@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../webfonts/sourcecodepro/v3/mrl8jkM18OlOQN8JLgasD90tugusXa58UbOrParLRF0.eot);
+	src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(../webfonts/mrl8jkM18OlOQN8JLgasD90tugusXa58UbOrParLRF0.eot) format('embedded-opentype'), url(../webfonts/mrl8jkM18OlOQN8JLgasDxM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../webfonts/leqv3v-yTsJNC7nFznSMqVV89XnfCtb1fhQGOlhyqi8.eot);
+	src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(../webfonts/leqv3v-yTsJNC7nFznSMqVV89XnfCtb1fhQGOlhyqi8.eot) format('embedded-opentype'), url(../webfonts/leqv3v-yTsJNC7nFznSMqVkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
+}*/
+
+
+@font-face {
+	font-family: Neuton;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../webfonts/cVNn68S7F5XDg8YilesTjA.eot);
+	src: local('Neuton Regular'), local('Neuton-Regular'), url(../webfonts/cVNn68S7F5XDg8YilesTjA.eot) format('embedded-opentype'), url(../webfonts/FWmpGWvJ4R8gbr0i3io5KQ.woff) format('woff');
+}
+@font-face {
+	font-family: Neuton;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../webfonts/MK-qWv3o5LiGs6rxlk2eu_Y6323mHUZFJMgTvxaG2iE.eot);
+	src: local('Neuton Bold'), local('Neuton-Bold'), url(../webfonts/MK-qWv3o5LiGs6rxlk2eu_Y6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(../webfonts/MK-qWv3o5LiGs6rxlk2euz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+	font-family: 'Fredericka the Great';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../webfonts/7Es8Lxoku-e5eOZWpxw18kLzRiPHQLkuFZv2gk0ljvI.eot);
+	src: local('Fredericka the Great'), local('FrederickatheGreat'), url(../webfonts/7Es8Lxoku-e5eOZWpxw18kLzRiPHQLkuFZv2gk0ljvI.eot) format('embedded-opentype'), url(../webfonts/7Es8Lxoku-e5eOZWpxw18vc3vBAn7YvtW9hNjxWZBR0.woff) format('woff');
+}
+@font-face {
+	font-family: 'Fjalla One';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../webfonts/rxxXUYj4oZ6Q5oDJFtEd6lQlYEbsez9cZjKsNMjLOwM.eot);
+	src: local('Fjalla One'), local('FjallaOne-Regular'), url(../webfonts/rxxXUYj4oZ6Q5oDJFtEd6lQlYEbsez9cZjKsNMjLOwM.eot) format('embedded-opentype'), url(../webfonts/rxxXUYj4oZ6Q5oDJFtEd6hsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+/*@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../webfonts/1TiHc9yag0wq3lDO9cw0vvY6323mHUZFJMgTvxaG2iE.eot);
+  src: local('Nunito-Light'), url(../webfonts/1TiHc9yag0wq3lDO9cw0vvY6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(../webfonts/1TiHc9yag0wq3lDO9cw0vj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfonts/JzBfLWXc4Z6sd0WuCbRTgg.eot);
+  src: local('Nunito-Regular'), url(../webfonts/JzBfLWXc4Z6sd0WuCbRTgg.eot) format('embedded-opentype'), url(../webfonts/0rdItLTcOd8TSMl72RUU5w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../webfonts/TttUCfJ272GBgSKaOaD7KvY6323mHUZFJMgTvxaG2iE.eot);
+  src: local('Nunito-Bold'), url(../webfonts/TttUCfJ272GBgSKaOaD7KvY6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(../webfonts/TttUCfJ272GBgSKaOaD7Kj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}*/

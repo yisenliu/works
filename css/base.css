@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------ 
+	Copyright: 劉政皇
+	Author: 劉政皇
+	yisenliu@gmail.com
+  ------------------------------------------------------------------------*/
+html { }
+body {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(0,0,0,.2);
+	color: #555;
+	font-family: 'Arial Unicode MS', Arial, STHeitiTC-Medium, 'LiHei Pro', '儷黑 Pro', \5FAE\8EDF\6B63\9ED1\9AD4, '微軟正黑體', '新細明體', serif;
+	font-size: 100%;
+	line-height: 1.8;
+	background: url(../images/tex2res5.png) repeat;
+	font-style: normal;
+	font-weight: 400;
+}
+h1 {
+	font-family: 'Fredericka the Great', 'Fjalla One', 'Arial Unicode MS', Arial, STHeitiTC-Medium, 'LiHei Pro', '儷黑 Pro', \5FAE\8EDF\6B63\9ED1\9AD4, '微軟正黑體',  sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 4px;
+}
+h2 {
+	font-family: Neuton, Georgia, serif;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	line-height: 150%;
+}
+h3 {
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, 'Arial Unicode MS', Arial, 'LiHei Pro', '儷黑 Pro', \5FAE\8EDF\6B63\9ED1\9AD4, '微軟正黑體', STHeitiTC-Medium, sans-serif;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	line-height: 120%;
+}
+h4 {
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, 'Arial Unicode MS', Arial, 'LiHei Pro', '儷黑 Pro', \5FAE\8EDF\6B63\9ED1\9AD4, '微軟正黑體', STHeitiTC-Medium, sans-serif;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+img, embed, object, video { max-width: 100%; }
+input, select {
+	color: #555;
+	-webkit-appearance: none;
+}
+a:link {
+	color: #339999;
+	text-decoration: none;
+}
+a:visited { color: #339999; text-decoration: none;}
+a:hover {
+	color: #F60;
+	text-decoration: none;
+}
+a:active { color: #339999; }
+/*:root * { filter: none !important; }*/
+
+/* ----- SELECTION COLORS ----- */
+::selection { background: rgba(0,0,0,.2); }
+::-moz-selection {background: rgba(0,0,0,.2);}
+::-webkit-input-placeholder {color: #ccc;}
+::-webkit-search-cancel-button {-webkit-appearance: searchfield-cancel-button !important;}
+img::selection { background: transparent; }
+img::-moz-selection {background: transparent;}

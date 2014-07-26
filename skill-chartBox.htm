@@ -1,0 +1,319 @@
+<style>
+.skill-chartBox{
+	position: relative;
+	width: 100%;
+}
+.skill-chartBox .guidelines {
+	display: none;
+	width: 800px;
+	height: 800px;
+	position: absolute;
+	z-index: -2;
+	left: 50%;
+	top: 50px;
+	margin-left: -400px;
+	border-radius: 100%;
+	border-top: 10px solid rgba(153,153,153,.3);
+	border-right: 10px solid rgba(153,153,153,.3);
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	
+	-moz-transition: -moz-transform 1s ease 0s;
+	-ms-transition: -ms-transform 1s ease 0s;
+	-o-transition: -o-transform 1s ease 0s;
+	-webkit-transition: -webkit-transform 1s ease 0s;
+	transition: transform 1s ease 0s;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill-chartBox .guidelines:after {
+	content: '';
+	position: absolute;
+	width: 61%;
+	height: 61%;
+	top: 19.5%;
+	left: 19.5%;
+	display: block;
+	border-radius: 100%;
+	border-top: 4px solid transparent;
+	border-right: 4px solid rgba(153,153,153,.2);
+	border-left: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill-chartBox .guidelines:before {
+	content: '';
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	top: 20%;
+	left: 20%;
+	display: block;
+	border-radius: 100%;
+	border-top: 2px solid rgba(153,153,153,.2);
+	border-right: 2px solid rgba(153,153,153,.2);
+	border-left: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill-chartBox .guidelines p {
+	position: absolute;
+	left: 60%;
+	top: 50%;
+	width: 400px;
+	height: 1px;
+	border-bottom: solid 1px #ccc;
+	text-align: right;
+	-ms-transform-origin: -30% bottom;
+	-webkit-transform-origin: -30% bottom;
+	transform-origin: -30% bottom;
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	transition: transform 1s ease 0s;
+	-webkit-transition: -webkit-transform 1s ease 0s;
+	-moz-transition: -moz-transform 1s ease 0s;
+	-ms-transition: -ms-transform 1s ease 0s;
+	-o-transition: -o-transform 1s ease 0s;
+	font-size: 1em;
+	line-height: normal;
+}
+.skill-chartBox .ringChart { position: relative; }
+.skill-chartBox .ringChart.fields { margin-bottom: 30px; }
+.skill-chartBox .ringChart div {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill-chartBox .ringChart h3 { }
+.skill-chartBox .ringChart h4 {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	z-index: 1;
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+	text-indent: -500%;
+	overflow: hidden;
+	border: 16px solid transparent;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	-moz-transform: rotate(-225deg);
+	-ms-transform: rotate(-225deg);
+	-o-transform: rotate(-225deg);
+	-webkit-transform: rotate(-225deg);
+	transform: rotate(-225deg);
+	
+	-moz-transition: -moz-transform .5s ease 0s;
+	-ms-transition:-ms-transform .5s ease 0s;
+	-o-transition: transform .5s ease 0s;
+	-webkit-transition: -webkit-transform .5s ease 0s;
+	transition: transform .5s ease 0s;
+}
+.skill-chartBox .ringChart.fields h4 {
+	border-top-color: rgb(153,153,102);
+	border-right-color: rgb(153,153,102);
+}
+.skill-chartBox .ringChart.technologies h4 {
+	border-top-color: rgb(51,153,204);
+	border-right-color: rgb(51,153,204);
+}
+.skill-chartBox .ringChart h4:hover {
+	border-top-color: rgb(255,102,0);
+	border-right-color: rgb(255,102,0);
+}
+.skill-chartBox .ringChart ul { }
+.skill-chartBox .ringChart li { width: 200px; }
+.skill-chartBox .ringChart i:before {
+	content: attr(data-name);
+	white-space: nowrap;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	left: 50%;
+	font-size: 1em;
+	height: 1em;
+	line-height: 1em;
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-ms-transform-origin: left center;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+.skill-chartBox .ringChart i:after {
+	content: attr(data-name);
+	white-space: nowrap;
+	position: relative;
+	z-index: -1;
+	left: 0px;
+	padding: 5px 5px 5px 40px;
+	border-radius: 2px;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.skill-chartBox .ringChart li:hover i:before { color: #FF6600; }
+.skill-chartBox .ringChart li:hover i:after {
+	color: #000;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNjYwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, rgba(255,102,0,0) 0%, rgba(255,102,0,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,102,0,0)), color-stop(100%, rgba(255,102,0,1)));
+	background: -webkit-linear-gradient(left, rgba(255,102,0,0) 0%, rgba(255,102,0,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,102,0,0) 0%, rgba(255,102,0,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,102,0,0) 0%, rgba(255,102,0,1) 100%);
+	background: linear-gradient(to right, rgba(255,102,0,0) 0%, rgba(255,102,0,1) 100%);
+}
+.skill-chartBox .ringChart li:hover h4 {
+	border-top-color: #FF6600;
+	border-right-color: #FF6600;
+}
+</style>
+<script type="text/javascript">
+$('.guidelines').css({
+	'-moz-transform': 'rotate(-45deg)',
+	'-ms-transform': 'rotate(-45deg)',
+	'-o-transform': 'rotate(-45deg)',
+	'-webkit-transform': 'rotate(-45deg)',
+	transform: 'rotate(-45deg)'
+	}).fadeIn(1000,function(){showSkills();});
+$('.guidelines p').each(function(index,element){
+	var degree=-105+index*30;
+	$(element).css({
+		'-moz-transform': 'rotate('+degree+'deg)',
+		'-ms-transform': 'rotate('+degree+'deg)',
+		'-o-transform': 'rotate('+degree+'deg)',
+		'-webkit-transform': 'rotate('+degree+'deg)',
+		transform: 'rotate('+degree+'deg)'
+	})
+});
+function showSkills(){
+	//alert('showSkills');
+	var borderMaxSize=700;
+	var borderWidth=14;
+	var gap=4;
+	var fieldsHeight=$('.fields').outerHeight(true);
+	
+	$('.ringChart ul li').each(function(index,element){
+		var percent=$(element).data('percentage');
+		var degree=Math.round((180*percent-22500)/100);
+		var divWidth=borderMaxSize-index*(borderWidth+gap)*2;
+		var divHeight=borderMaxSize-index*(borderWidth+gap)*2;
+		var offsetLeft=-divWidth/2;
+		var $div=$(element).find('div');
+		var opacity;
+
+		switch(Math.floor(percent/20)){
+			case 0://Poor
+				opacity=0.2;
+				break;
+			case 1://Fair
+				opacity=0.35;
+				break;
+			case 2://Average
+				opacity=0.5;
+				break;
+			case 3://Good
+				opacity=0.65;
+				break;
+			default://Excellent
+				opacity=0.9;
+				break;
+		}
+		$div.show(index*250,function(){
+			if(index>8){
+				$(this).css({marginTop:-fieldsHeight});
+				$(this).siblings('i').pseudoCss(':before',{marginTop:-fieldsHeight+'px'});
+			}
+			$(this).css({
+				width: divWidth,
+				height: divHeight,
+				top:100+index*(borderWidth+gap),
+				marginLeft:offsetLeft,
+				clip: 'rect(0px,'+divWidth+'px,'+(divHeight/2)+'px,0px)',
+				zIndex:index+1
+			});
+			$(this).find('h4').css({
+				borderWidth:borderWidth,
+				opacity:opacity,
+				'-moz-transform': 'rotate('+degree+'deg)',
+				'-ms-transform': 'rotate('+degree+'deg)',
+				'-o-transform': 'rotate('+degree+'deg)',
+				'-webkit-transform': 'rotate('+degree+'deg)',
+				transform: 'rotate('+degree+'deg)'
+			});
+			var top=$div.position().top+$div.height()/2;
+			$(this).siblings('i').attr('data-name',$(element).find('h4').text()).pseudoCss(':before',{
+				marginLeft:(offsetLeft+gap)+'px',
+				top: top+'px',
+				display:'block'
+			});
+		});
+		
+		$(element).click(function(event){
+			$(this).hover();
+			return false;
+		})
+	})
+}
+</script>
+				<!--[if gte IE 9]><!-->
+				<div class="skill-chartBox">
+					<div class="guidelines">
+						<p>Poor</p>
+						<p>Fair</p>
+						<p>Average</p>
+						<p>Good</p>
+						<p>Excellent</p>
+					</div>
+					<div class="ringChart fields">
+						<h3>Fields</h3>
+						<ul>
+							<li data-percentage="90"><i class="icon-web-visiual-design"></i><div><h4>Web Visiual Design</h4></div></li>
+							<li data-percentage="80"><i class="icon-responsive-web-design"></i><div><h4>Responsive Web Design</h4></div></li>
+							<li data-percentage="60"><i class="icon-single-page-application"></i><div><h4>Single Page Application</h4></div></li>
+							<li data-percentage="85"><i class="icon-user-experience"></i><div><h4>User eXperience</h4></div></li>
+							<li data-percentage="30"><i class="icon-graphic-design"></i><div><h4>Graphic Design</h4></div></li>
+							<li data-percentage="75"><i class="icon-mockup"></i><div><h4>Mockup</h4></div></li>
+							<li data-percentage="65"><i class="icon-front-end-programing"></i><div><h4>Front-end Programing</h4></div></li>
+							<li data-percentage="75"><i class="icon-3d-animation"></i><div><h4>3D Animation</h4></div></li>
+							<li data-percentage="70"><i class="icon-flash-animation"></i><div><h4>Flash Animation</h4></div></li>
+						</ul>
+					</div>
+					<div class="ringChart technologies">
+						<h3>Technologies</h3>
+						<ul>
+							<li data-percentage="90"><i class="icon-html"></i><div><h4>HTML 4/5</h4></div></li>
+							<li data-percentage="80"><i class="icon-css"></i><div><h4>CSS 2/3</h4></div></li>
+							<li data-percentage="60"><i class="icon-jquery"></i><div><h4>jQuery</h4></div></li>
+							<li data-percentage="70"><i class="icon-flash"></i><div><h4>Flash / ActionScript2</h4></div></li>
+							<li data-percentage="85"><i class="icon-photoshop"></i><div><h4>Photoshop</h4></div></li>
+							<li data-percentage="45"><i class="icon-illustrator"></i><div><h4>Illustrator</h4></div></li>
+							<li data-percentage="90"><i class="icon-dreamweaver"></i><div><h4>Dreamweaver</h4></div></li>
+							<li data-percentage="75"><i class="icon-3ds-max"></i><div><h4>3DS Max</h4></div></li>
+							<li data-percentage="65"><i class="icon-maya"></i><div><h4>Maya</h4></div></li>
+						</ul>
+					</div>
+				</div>
+				<!--<![endif]-->

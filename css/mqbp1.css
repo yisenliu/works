@@ -1,0 +1,476 @@
+/*
+ *	Copyright: 劉政皇
+ *	Author: 劉政皇
+ *	yisenliu@gmail.com
+*/
+  
+  
+@media only screen and (max-width: 30em) {/*480px/30em below*/
+#page-preloader{
+	background-image: url(../images/preloaders/285.gif);
+	background-size:64px 64px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: fixed;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	min-width: 16em;
+	visibility: hidden;
+}
+.mainContent {
+	position: relative;
+	z-index: 1;
+}
+.section {
+	position: relative;
+	clear:both;
+}
+/*------------------------------------------------------------------------ 
+	Global
+  ------------------------------------------------------------------------*/
+.slideContent {
+	padding-top: 5em;
+	width: 100%;
+	margin: 0 auto;
+}
+.slideHeading {
+	width: 98%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 2em;
+	overflow: hidden;
+	line-height: normal;
+	position: relative;
+}
+.slideHeading h1 {
+	font-size: 2em;
+	color: #333;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0px 10px 25px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.slideHeading h1:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 43%;
+	border-bottom: solid 2px #bbb;
+}
+.slideHeading h1:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	width: 43%;
+	border-bottom: solid 2px #bbb;
+}
+.slideHeading i { margin-top: -40px !important; }
+
+
+
+/*------------------------------------------------------------------------ 
+	Header
+  ------------------------------------------------------------------------*/
+.header {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+	width: 100%;
+	background-color: #FFF;
+	height: 3.5em;
+}
+.header .logo {
+	display: block;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	z-index:1;
+	top:0.5em;
+	left:1em;
+}
+.navi {
+	text-align: center;
+	min-height: 4em;
+	width: 100%;
+}
+
+.navi > span {
+	cursor:pointer;
+	display: block;
+	height: 3.5em;
+	line-height:3em;
+	width: 3em;
+	background-color:#FF6600;
+	text-align:center;
+	position: absolute;
+	top:0;right:0;
+}
+.navi > span:before {
+	content:'';
+	position:absolute;
+	right:100%;
+	top:50%;
+	margin-top:-10px;
+	display: block;
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #ff6600 transparent transparent;
+}
+.naviMask{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background-color: rgba(255,255,255,.5);
+}
+.naviMask.show{
+	width: 100%;
+	height: 100%;
+}
+.navi ul{
+	display: block;
+	width: 3em;
+	height: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: -3em;
+	text-align: center;
+	background-color: #FFFFFF;
+	-webkit-transition: right 0.5s ease 0s;
+	-moz-transition: right 0.5s ease 0s;
+	-ms-transition: right 0.5s ease 0s;
+	-o-transition: right 0.5s ease 0s;
+	transition: right 0.5s ease 0s;
+}
+.navi.show ul{
+	right:0;
+	box-shadow:-4px 0 4px 0 rgba(0,0,0,.3);
+}
+.navi li {
+	font-size: 1em;
+	line-height: 1;
+	display: block;
+	margin:1em 0;
+	position:relative;
+}
+.navi li > a {
+	font-size: 0.75em;
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, Arial, sans-serif;
+	display: block;
+	position: relative;
+	z-index: 2;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+.navi li > a:link		{ color: #333;}
+.navi li > a:visited	{ color: #333;}
+.navi li > a:hover	{ color: #FC0;}
+.navi li > a:active	{ color: #333;}
+.navi li.current > a {	color: #cc0000 !important;border-left: 4px solid #FF6600;}
+.navi li > a i{
+	margin: 4px 0;
+	display: block;
+	-webkit-filter: grayscale(100%);
+	-webkit-transform: translateZ(0);/*解决 -webkit-filter: grayscale(100%) 在 retina 下的模糊问题*/
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray;/* IE6-9 */
+}
+.navi li > a:hover i,
+.navi li.current i{
+	-webkit-filter: none;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter:none;
+}
+
+
+/*------------------------------------------------------------------------ 
+	Main Content
+  ------------------------------------------------------------------------*/
+.aboutDiv { padding-bottom: 2em; }
+.aboutDiv article { margin-bottom: 2em; }
+.aboutDiv article h3 { margin-bottom: 5px; }
+.aboutDiv article h3 ~ * {
+	line-height: 120%;
+	margin-left: 40px;
+}
+.aboutDiv article ul {}
+.aboutDiv article li {
+	list-style-type: disc;
+	margin: 0px 0px 1em 25px;
+}
+.aboutDiv #timelineChart {
+	margin: 0 auto;
+	display: block;
+}
+.clientsDiv{}
+.clientsDiv ul{
+	margin: 0px auto;
+	width: 95%;
+}
+.clientsDiv li{
+	display: block;
+	float: left;
+	margin:0 10px;
+}
+.homeDiv { }
+.homeDiv .slideContent { width: 100%; }
+.home-statistics {
+	text-align: center;
+	width:100px;
+	margin: 0 auto 0 65%;
+	position: relative;
+}
+.home-statistics:before {
+	content: '';
+	height: 30px;
+	width: 500%;
+	position: absolute;
+	top: 60%;
+	right: 100%;
+	margin-right:15px;
+	background: url(../images/border2.png);
+}
+.home-statistics:after {
+	content: '';
+	height: 30px;
+	width: 500%;
+	position: absolute;
+	top: 60%;
+	left: 100%;
+	margin-left: 15px;
+	background: url(../images/border2.png);
+}
+.home-statistics li {
+	text-align:center;
+	display: block;
+	margin-bottom: 0px;
+	width: 100px;
+	height: 100px;
+	font-size: 11px;
+	line-height: 1;
+	background-image: url(../images/hexagon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+.home-statistics li p {
+	font-size: 40px;
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, Arial;
+	padding-top: 20px;
+	display:block;
+}
+.home-title {
+	width:60%;
+	margin:0 0 0.5em 5%;
+	font-size: 2em;
+	color: #000000;
+	line-height:1.2;
+	float:left;
+}
+.home-title-sub {
+	width:60%;
+	margin-left: 5%;
+	font-size: 1.3em;
+	float:left;
+}
+.home-technical {
+	width: 94%;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+.home-technical h2 { margin: 0.3em 0; }
+.home-technical h3 { margin-bottom: 1em; }
+.home-technical article {
+	padding-bottom: 2em;
+	margin: 0 auto;
+	width: 98%;
+
+	/*以下為居家旅行必備良方*/
+	/*solve the vertical-align problem of horizontal divs*/
+	vertical-align:top;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	height:auto!important;
+	height:200px;
+	min-height:200px;
+}
+.home-technical img {
+	width: 100%;
+	margin: 0 0 1em 0;
+	display: block;
+	vertical-align: top;
+	border: 5px solid #FFFFFF;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-shadow: rgba(0,0,0,.3) 2px 2px 4px 0;
+	-webkit-box-shadow: rgba(0,0,0,.3) 2px 2px 4px 0;
+	box-shadow: rgba(0,0,0,.3) 2px 2px 4px 0;
+}
+.home-technical p {
+	margin: 0 0 1em 0;
+	display: block;
+}
+.home-technical footer {
+	font-size: 0.75em;
+	text-align: right;
+}
+.home-technical cite { display: block; }
+.home-technical footer a {
+	margin: 0 4px;
+	font-size: 1.2em;
+}
+.home-technical footer a[href^="http:"] {
+	padding-right: 12px!important;
+	background: url(../images/externalLink.gif) no-repeat right top;
+}
+.scrollDown {
+	margin-bottom: 1em !important;
+	cursor: pointer;
+	border-radius: 100%;
+	border: 8px solid #FFF;
+	background-color: #FFF;
+	-moz-box-shadow: 0 -4px 0 0 rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 -4px 0 0 rgba(0,0,0,.5);
+	box-shadow: 0 -4px 0px 5px rgba(0,0,0,.3);
+}
+.skillsDiv .slideContent{ width:100%; }
+.skillsDiv #ringChart {
+	margin: 0 auto;
+	display: block;
+}
+.worksDiv { }
+.worksDiv .thumbLink{ display:block;width:100%;height:100%;}
+.worksDiv .slideContent { width: 100%; }
+.worksDiv .thumb > span{	
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, Arial;
+	line-height: 1;
+	color: rgba(153,153,153,.5);
+	text-shadow: 1px 1px 2px #FFF;
+	background-image: url(../images/border2.png);
+	background-repeat: repeat;
+	height:100%;
+	width:100%;
+
+display:-ms-flexbox;
+-ms-flex-pack:center;
+-ms-flex-align:center;
+
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+display:box;
+box-pack:center;
+box-align:center;
+}
+#fullscr{
+	position: fixed;
+	z-index: 9999;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+	display:none;
+	background-color: rgba(0,0,0,.5);
+}
+#fullscr .closeBtn{
+	position:absolute;
+	z-index: 100;
+	display:block;
+	top:0;
+	right:0;
+	width:64px;
+	height:64px;
+}
+
+
+/*------------------------------------------------------------------------ 
+	Footer
+  ------------------------------------------------------------------------*/
+.footer {
+	width: 100%;
+	height: 10em;
+	line-height: 100%;
+	color: #eee;
+	padding: 1em 0;
+	background-image: url(../images/tex2res4.png);
+	text-align: center;
+	position:relative;
+	font-family:Nunito, Arial, Helvetica, sans-serif ;
+}
+.footer > p {
+	font-size: 0.75em;
+	display: block;
+	margin-bottom:1em;
+}
+.footer ul {
+	display: block;
+}
+.footer li {
+	text-align: center;
+	display: inline-block;
+	margin:0 0 0 4px;
+}
+.footer span {
+	cursor: pointer;
+	display: block;
+	float:left;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	background-color: #FFF;
+	border-radius: 0 100% 100% 100%;
+}
+.footer span:hover { background: #000; }
+.footer i {
+	position: relative;
+	top: 8px;
+}
+.footer li p {
+	font-size: 1.2em;
+	display: none;
+	white-space: nowrap;
+}
+}
+
+
+@media  
+only screen and (max-width: 30em) and (min--moz-device-pixel-ratio: 2),
+only screen and (max-width: 30em) and (-moz-min-device-pixel-ratio: 2),
+only screen and (max-width: 30em) and (-o-min-device-pixel-ratio: 2/1),
+only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-width: 30em) and (min-device-pixel-ratio: 2),
+only screen and (max-width: 30em) and (min-resolution: 192dpi),
+only screen and (max-width: 30em) and (min-resolution: 2dppx){
+#page-preloader{	background-image: url(../images/preloaders/285@2x.gif);}
+}

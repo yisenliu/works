@@ -1,0 +1,40 @@
+{ 
+	"articles": [
+		{
+			"img" : "upload/tech_articles/icons_selection_font_awesome_2.jpg",
+			"heading" : "Font Awesome",
+			"href" : "http://fontawesome.io/",
+			"context" : "Font Awesome gives you scalable vector icons that can instantly be customized-size, color, drop shadow, and anything that can be done with the power of CSS.",
+			"date" : "July 05, 2013",
+			"cite" : "Font Awesome",
+			"citeLink" : "http://fontawesome.io/"
+		},
+		{
+			"img" : "upload/tech_articles/justfont.jpg",
+			"heading" : "雲端字型",
+			"href" : "http://www.justfont.com/",
+			"context" : "字型的挑選和使用，常常令網頁設計和前端開發人員都頭痛不已，設計中使用到的各種字型，在網頁設計中僅能製成圖檔來呈現，這在互動性和網站的SEO排名都非常不利，還好，現在已經有新的網頁字型(又稱為雲端字型)技術。",
+			"date" : "July 04, 2013",
+			"cite" : "justfont",
+			"citeLink" : "http://www.justfont.com/"
+		},
+		{
+			"img" : "upload/tech_articles/Extras_on_Demand.jpg",
+			"heading" : "需要时显示：论App中的功能可见性",
+			"href" : "http://www.boxui.com/ued/interaction-design/2330.html",
+			"context" : "近几年移动平台风生水起，APP多得数不胜数，交互方式也是遍地开花，相信大家都玩过那么几个让人惊艳的APP。大家看到的亮点或是转场够炫、或是拟物得恰到好处、又或是突破性的操作方式，但我认为“需要时显示”也是许多设计中的精妙之笔，是设计师应遵循的原则之一。",
+			"date" : "July 04, 2013",
+			"cite" : "盒子UI",
+			"citeLink" : "http://www.boxui.com/"
+		},
+		{
+			"img" : "upload/tech_articles/rwd.jpg",
+			"heading" : "15 CSS Frameworks for Responsive Web Design",
+			"href" : "http://webexpedition18.com/articles/responsive-css-frameworks/",
+			"context" : "Responsive design is cool thing to do, and for good reason - it means one site to maintain for all devices. It’s also a really challenging approach to web design.",
+			"date" : "July 04, 2013",
+			"cite" : "Webexpedition18",
+			"citeLink" : "http://webexpedition18.com/"
+		}
+	]
+}

@@ -1,0 +1,100 @@
+body {
+	font-family: 'Arial Unicode MS', STHeitiTC-Medium, '新細明體', 'LiHei Pro', '儷黑 Pro', \5FAE\8EDF\6B63\9ED1\9AD4, '微軟正黑體', serif;
+}
+i[class^="icon-"]{/*IE7*/
+	*display:inline;
+	*zoom:1;
+}
+#fullscr{ background-image: url(../images/bg-fullscr.png); }
+#fullscr .closeBtn{	cursor:pointer;}
+.header{	*zoom: 1;}
+
+.slideHeading h1{
+	*display:inline!important;
+	*zoom:1;
+	position:relative;
+	z-index:-1;
+}
+.slideHeading i { margin-top: -10px !important; }
+.home-statistics li{
+	*display:inline!important;
+	*zoom:1;
+}
+.home-technical{	*zoom:1;}
+.home-technical article{	width: 22.5%;}
+.skillsDiv .barChart{
+	display:block;
+	float:left;
+	width:45%;
+	margin:0 2% 2em;
+	overflow:hidden;
+}
+.skillsDiv .barChart h3{
+	margin-left: 40px;
+	display: block;
+}
+.skillsDiv .barChart h4{
+	display: block;
+	margin-left: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 0.5em;
+	border-radius: 3px;
+	width: 0em;
+	color: #FFFFFF;
+	font-weight: normal;
+	letter-spacing: 0em;
+}
+.skillsDiv .barChart ul{  }
+.skillsDiv .barChart li{
+	clear: left;
+	overflow: hidden;
+	height: 32px;
+	line-height: 32px;
+	margin-bottom: 8px;
+	display:block;
+}
+.skillsDiv .barChart li i{ float:left;}
+.skillsDiv .fields h4{	background-color: rgb(153,153,102);}
+.skillsDiv .technologies h4{	background-color: rgb(51,153,204);}
+.worksDiv .thumb > span{
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Fjalla One', AvenirNextCondensed-DemiBold, Arial;
+	line-height: 1;
+	color: rgba(153,153,153,.5);
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-shadow: 1px 1px 2px #FFF;
+	background-image: url(../images/border2.png);
+	background-repeat: repeat;
+}
+.footer li {
+	*display: inline !important;
+	*zoom:1;
+}
+
+@media only screen and (max-width: 480px) {
+.navi li{
+	width: auto;
+	clear: left;
+	cursor:pointer;
+}
+.skillsDiv .barChart{
+	float:none;
+	width:96%;
+	margin:0 2% 1em;
+}
+.skillsDiv .barChart h4{	font-size: 0.8em;}
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+.navi li{	width:19.5%;}
+.skillsDiv .barChart h4{	font-size: 0.8em;}
+}
+
+@media only screen and (min-width:769px) {
+.navi li{	width:19.5%;}
+}
+
