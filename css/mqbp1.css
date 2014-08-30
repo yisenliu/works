@@ -148,6 +148,7 @@
 	width: 3em;
 	height: 100%;
 	position: fixed;
+	-webkit-transform: translateZ(0);
 	z-index: 2;
 	top: 0;
 	right: -3em;
