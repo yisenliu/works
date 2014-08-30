@@ -234,7 +234,7 @@
 	margin:0 10px;
 }
 .homeDiv { }
-.homeDiv .slideContent { width: 100%; }
+.homeDiv .slideContent { width: 100%; -webkit-transform: translateZ(0);}
 .home-statistics {
 	text-align: center;
 	width:100px;
