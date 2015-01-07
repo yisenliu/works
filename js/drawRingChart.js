@@ -12,7 +12,7 @@
 				{percent:76,name:'3D Animation'},
 				{percent:70,name:'Flash Animation'},
 				{percent:92,name:'HTML 4/5'},
-				{percent:95,name:'CSS 2/3'},
+				{percent:95,name:'CSS/LESS/SASS'},
 				{percent:78,name:'jQuery'},
 				{percent:75,name:'Flash / ActionScript2'},
 				{percent:85,name:'Photoshop'},
