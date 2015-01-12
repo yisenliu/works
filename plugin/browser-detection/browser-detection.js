@@ -1,13 +1,21 @@
-/*
- * Browser Detection
- * © 2010 DevSlide Labs 
- * 
- * Visit us at: www.devslide.com/labs
- */
 
-var notSupportedBrowsers = [];
-var displayPoweredBy = true;
-var noticeLang = 'professional';
+ // * Browser Detection
+ // * © 2010 DevSlide Labs 
+ // * 
+ // * Visit us at: www.devslide.com/labs
+ 
+
+var notSupportedBrowsers = [{'os': 'Any', 'browser': 'MSIE', 'version': 6}, {'os': 'Any', 'browser': 'Firefox', 'version': 5}];
+// var notSupportedBrowsers = [];
+var displayPoweredBy = false;
+// var noticeLang = 'professional';
+var noticeLang = 'custom';
+var noticeLangCustom = {
+"title": "OOPS!  Outdated Browser Detected.",
+"notice": "Get a new one here.",
+"selectBrowser": "Official sites for popular browsers:",
+"remindMeLater": "Remind me later.",
+"neverRemindAgain": "Never remind." };
 var noticeLangCustom = null;
 var supportedBrowsers = [];
 
