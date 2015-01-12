@@ -149,9 +149,9 @@
 			ctx.stroke();
 			ctx.restore();
 			
-			/*if(getHashStr()=='#skills'){
-				$('body').stop().animate({scrollTop:$(element).offset().top-100});
-			}*/
+			// if(getHashStr()=='#skills'){
+			// 	$('body').stop().animate({scrollTop:$(element).offset().top-100});
+			// }
 		}
 		function getHashStr(){
 			var hashStr=window.location.hash;
