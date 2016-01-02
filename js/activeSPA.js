@@ -1,6 +1,5 @@
 (function ($) {
   'use strict';
-
   var section = [],
     sectionLoaded = [],
     sectionNum = 0,
