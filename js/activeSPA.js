@@ -5,7 +5,7 @@
     sectionNum = 0,
     hashStr = getHashStr(),
     currentHashIndex = 0,
-    $body = (($.browser.msie && parseInt($.browser.version, 10) <= 9) || $.browser.mozilla) ? $('html') : $('body'),
+    $root = $('html') ,
     fromClick = false,
     firstLoad = true,
     $header = $('#header'),
@@ -122,7 +122,7 @@
 
 
   function slideToHash() {
-    $body.stop().animate({
+    $root.stop().animate({
       scrollTop: $section.eq(currentHashIndex).offset().top
     }, 500, function () {
       var temp = section[currentHashIndex].hash,
@@ -167,7 +167,7 @@
     });
 
     $('.scrollDown').on('click', function () {
-      $body.stop().animate({
+      $root.stop().animate({
         scrollTop: $(this).offset().top - $('#header').height() + $(this).outerHeight()
       }, 500);
       return false;
