@@ -168,7 +168,7 @@
 
     $('.scrollDown').on('click', function () {
       $root.stop().animate({
-        scrollTop: $(this).offset().top - $('#header').height() + $(this).outerHeight()
+        scrollTop: $('.worksDiv').offset().top
       }, 500);
       return false;
     });

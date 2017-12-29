@@ -68,7 +68,7 @@ $(function () {
   $('img').retina();
 
   $.getScript('js/activeSPA.js');
-  $.getScript('js/load_techArticles.js');
+  // $.getScript('js/load_techArticles.js');
 
 
   $toggleNav.on('click', function () {
