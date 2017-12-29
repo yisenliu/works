@@ -58,14 +58,26 @@
             $('.home-statistics li').each(function (index, element) {
               var num = $(element).data('num'),
                 i = 0,
-                rollInt = setInterval(rollNum, totalTime / num);
-
-              function rollNum() {
-                $(element).find('p').text((i <= 1000) ? i++ : '999+');
-                if (i === num) {
-                  clearInterval(rollInt);
-                }
-              }
+				max = 0,
+                rollInt = setInterval(function () {
+					switch(index){
+						case 0:
+							max = 10;
+							break;
+						case 1:
+							max = 50;
+							break;
+						case 2:
+							max = 200;
+							break;
+						default:
+					};
+					i++;
+					$(element).find('p').text((i <= max) ? i :  String(max)+'+');
+					if (i >= num) {					
+					  clearInterval(rollInt);
+					}
+				}, totalTime / num);              
             });
           }, 500);
         }
