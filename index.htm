@@ -1,343 +1,595 @@
 <!DOCTYPE html>
 <html lang="zh">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0E6HCYM76F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="format-detection" content="telephone=no">
-  <!-- favicons start -->
-  <link rel="manifest" href="images/favicons/manifest.json">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#fff">
-  <meta name="application-name" content="Works">
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Works">
-  <link rel="icon" type="image/png" sizes="228x228" href="images/favicons/coast-228x228.png">
-  <meta name="msapplication-TileColor" content="#fff">
-  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
-  <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" href="images/favicons/favicon.ico">
-  <!-- favicons end -->  
-  <title>Yisen</title>
-  <link rel="stylesheet" href="css/app.min.css">
-  <link type="text/css" rel="stylesheet" href="plugin/jquery/royalslider/royalslider.css" />
-  <link type="text/css" rel="stylesheet" href="css/royalslider_skins/rsLightbox.css" />
-  <link type="text/css" rel="stylesheet" href="plugin/browser-detection/browser-detection.css" />
-</head>
+      gtag("config", "G-0E6HCYM76F");
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- favicons start -->
+    <link rel="manifest" href="images/favicons/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="application-name" content="Works" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon-180x180.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Works" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="228x228"
+      href="images/favicons/coast-228x228.png"
+    />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="images/favicons/browserconfig.xml"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    <!-- favicons end -->
+    <title>Yisen</title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="plugin/jquery/royalslider/royalslider.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/royalslider_skins/rsLightbox.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="plugin/browser-detection/browser-detection.css"
+    />
+  </head>
 
-<body class="">
-  <div id="page-preloader"></div>
-  <div class="container">
-    <header id="header" class="header">
-      <a href="index.htm" class="logo"><i class="icon-logo"></i></a>
-      <nav class="navi no-float">
-        <div class="naviMask"></div>
-        <span><i class="icon-list"></i></span>
-        <ul>
-          <li class="home"><a href="#home"><i class="icon-home icon-clear"></i>Home</a></li>
-          <li class="works"><a href="#works"><i class="icon-portfolio icon-clear"></i>Works</a></li>
-          <li class="clients"><a href="#clients"><i class="icon-earth icon-clear"></i>Clients</a></li>
-          <li class="skills"><a href="#skills"><i class="icon-skills icon-clear"></i>Skills</a></li>
-          <li class="about"><a href="#about"><i class="icon-visitcard icon-clear"></i>About me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="mainContent">
-      <div class="section homeDiv" data-section="#home">
-        <div class="slideContent">
-          <h1 class="home-title">Senior Web Designer</h1>
-          <h2 class="home-title-sub">- over 5 Yrs. Exp.</h2>
-          <ul class="home-statistics">
-            <li data-num="13">
-              <p>0</p>Years of Experience</li>
-            <li data-num="28">
-              <p>0</p>Clients Served</li>
-            <li data-num="170">
-              <p>0</p>Completed Projects</li>
-          </ul>
-          <i class="icon-arrow-down icon-clear scrollDown"></i>
-        </div>
-      </div>
-      <div class="section worksDiv" data-section="#works">
-        <div class="slideContent">
-          <div class="slideHeading">
-            <h1>My Works</h1>
-            <h2><i class="icon-test-tube icon-clear"></i>What did I do?</h2>
-          </div>
-          <div class="blinkfeed">
-            <!--單格圖片規格：寬200px,高>200px-->
-            <!--width2圖片規格：寬404px,高200px-->
-            <!--height2圖片規格：寬200px,高>404px-->
-            <!--width2height2圖片規格：寬>404px,高>404px-->
-            <figure class="thumb height2" data-project="très vous">
-              <a href="ajax-tresvous.htm" class="thumbLink"><img srcset="upload/works/2019/tresvous-thumb@200.png 200w,upload/works/2019/tresvous-thumb@400.png 400w,upload/works/2019/tresvous-thumb@600.png 600w,upload/works/2019/tresvous-thumb@800.png 800w" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="486團購">
-              <a href="ajax-486shop.htm" class="thumbLink"><img srcset="upload/works/2018/486shop-thumb@200.png 200w,upload/works/2018/486shop-thumb@400.png 400w,upload/works/2018/486shop-thumb@600.png 600w,upload/works/2018/486shop-thumb@800.png 800w" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="永豐餘生技(mobile)">
-              <a href="ajax-green-n-safe-mobile-2016.htm" class="thumbLink"><img srcset="upload/works/2016/green-n-safe-mobile-thumb.png 1x,upload/works/2016/green-n-safe-mobile-thumb@2x.png 2x" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="台灣大車隊">
-              <a href="ajax-taiwantaxi-mobile-2015.htm" class="thumbLink"><img src="upload/works/2015/taiwantaxi-mobile-thumb.png" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="京站Qsquare Official">
-              <a href="ajax-qsquare-mobile-2015.htm" class="thumbLink"><img src="upload/works/2015/qsquare-mobile-thumb.png" alt=""></a>
-            </figure>
-            <figure class="thumb width2" data-project="永豐餘生技 E-commerce">
-              <a href="ajax-green-n-safe-2015.htm" class="thumbLink"><img src="upload/works/2015/green-n-safe-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb width2" data-project="台北貿易 Official">
-              <a href="ajax-tpetrade.htm" class="thumbLink"><img src="upload/works/2014/tpetrade-thumb.png" alt=""></a>
-            </figure>
-            <figure class="thumb width2" data-project="台灣山葉機車 Official">
-              <a href="ajax-yamaha.htm" class="thumbLink"><img src="upload/works/2014/yamaha-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="聯合發行 Official">
-              <a href="ajax-udc.htm" class="thumbLink"><img src="upload/works/2013/udc_thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb width2" data-project="荖藤酒窖 Official">
-              <a href="ajax-laoteng.htm" class="thumbLink"><img src="upload/works/2013/laoteng_thumb.png" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="安聯人壽 Event">
-              <a href="ajax-allianzCourage.htm" class="thumbLink"><img src="upload/works/2012/allianzCourage_thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="安聯人壽 Event">
-              <a href="ajax-allianzSummer.htm" class="thumbLink"><img src="upload/works/2012/allianzSummer_thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="匯豐汽車 Event">
-              <a href="ajax-30888hot.htm" class="thumbLink"><img src="upload/works/2012/30888hot_thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="中古車代理商 Template">
-              <a href="ajax-carAgent.htm" class="thumbLink"><img src="upload/works/2011/carAgent-thumb.png" alt=""></a>
-            </figure>
-            <figure class="thumb height2" data-project="匯豐汽車 Official">
-              <a href="ajax-fmc.htm" class="thumbLink"><img src="upload/works/2010/fmc-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="京站時尚廣場 Official">
-              <a href="ajax-qsquare.htm" class="thumbLink"><img src="upload/works/2009/qsquare-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="摩斯漢堡 Official">
-              <a href="ajax-mosburger.htm" class="thumbLink"><img src="upload/works/2009/mosburger-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="SUM賞車網 Official">
-              <a href="ajax-sum.htm" class="thumbLink"><img src="upload/works/2009/sum-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="AMS Official">
-              <a href="ajax-ams.htm" class="thumbLink"><img src="upload/works/2008/ams-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb width2" data-project="神腦國際 Official">
-              <a href="ajax-senao.htm" class="thumbLink"><img src="upload/works/2008/senao-thumb.jpg" alt=""></a>
-            </figure>
-            <figure class="thumb" data-project="瀚荃集團 Intranet">
-              <a href="ajax-cvilux.htm" class="thumbLink"><img src="upload/works/2008/cvilux-thumb.jpg" alt=""></a>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="section clientsDiv" data-section="#clients">
-        <div class="slideContent">
-          <div class="slideHeading">
-            <h1>Clients</h1>
-            <h2><i class="icon-test-tube icon-clear"></i>From A to Z</h2>
-          </div>
+  <body class="">
+    <div id="page-preloader"></div>
+    <div class="container">
+      <header id="header" class="header">
+        <a href="index.htm" class="logo"><i class="icon-logo"></i></a>
+        <nav class="navi no-float">
+          <div class="naviMask"></div>
+          <span><i class="icon-list"></i></span>
           <ul>
-            <li><i class="clients-allianz clients-2x">安聯人壽</i></li>
-            <li><i class="clients-cooler-master">Cooler Master</i></li>
-            <li><i class="clients-cvilux">瀚荃企業</i></li>
-            <li><i class="clients-ikea clients-2x">IKEA</i></li>
-            <li><i class="clients-mitsui-chemicals">三井化學</i></li>
-            <li><i class="clients-mitsubishi-motors">Mitsubishi Motors</i></li>
-            <li><i class="clients-mercedes-benz clients-3x">Mercedes-Benz</i></li>
-            <li><i class="clients-merrycafe">聖瑪莉</i></li>
-            <li><i class="clients-mos-burger">摩斯漢堡</i></li>
-            <li><i class="clients-neogence clients-2x">霓淨思</i></li>
-            <li><i class="clients-nobel clients-2x">諾貝爾醫療集團</i></li>
-            <li><i class="clients-pelican clients-2x">宅配通</i></li>
-            <li><i class="clients-qsquare clients-2x">Q Square京站時尚廣場</i></li>
-            <li><i class="clients-royal-host clients-2x">樂雅樂家庭餐廳t</i></li>
-            <li><i class="clients-rt-mart clients-2x">大潤發</i></li>
-            <li><i class="clients-save">SAVE認證車</i></li>
-            <li><i class="clients-senao">神腦國際</i></li>
-            <li><i class="clients-use">USE</i></li>
-            <li><i class="clients-verico">華譽國際</i></li>
-            <li><i class="clients-wayfong clients-2x">唯豐肉鬆</i></li>
-            <li><i class="clients-yamaha-motors clients-2x">Yamaha Motors</i></li>
-            <li><i class="clients-zynet clients-2x">Zynet</i></li>
+            <li class="home">
+              <a href="#home"><i class="icon-home icon-clear"></i>Home</a>
+            </li>
+            <li class="works">
+              <a href="#works"
+                ><i class="icon-portfolio icon-clear"></i>Works</a
+              >
+            </li>
+            <li class="clients">
+              <a href="#clients"
+                ><i class="icon-earth icon-clear"></i>Clients</a
+              >
+            </li>
+            <li class="skills">
+              <a href="#skills"><i class="icon-skills icon-clear"></i>Skills</a>
+            </li>
+            <li class="about">
+              <a href="#about"
+                ><i class="icon-visitcard icon-clear"></i>About me</a
+              >
+            </li>
           </ul>
-        </div>
-      </div>
-      <div class="section skillsDiv" data-section="#skills">
-        <div class="slideContent">
-          <div class="slideHeading">
-            <h1>Skills</h1>
-            <h2><i class="icon-test-tube icon-clear"></i>What I could do is ...</h2>
-          </div>
-          <canvas id="ringChart">
-            <div class="barChart fields">
-              <h3>Fields</h3>
-              <ul>
-                <li data-percentage="90"><i class="icon-web-visiual-design"></i>
-                  <h4>Web Visiual Design</h4></li>
-                <li data-percentage="80"><i class="icon-responsive-web-design"></i>
-                  <h4>Responsive Web Design</h4></li>
-                <li data-percentage="60"><i class="icon-single-page-application"></i>
-                  <h4>Single Page Application</h4></li>
-                <li data-percentage="85"><i class="icon-user-experience"></i>
-                  <h4>User eXperience</h4></li>
-                <li data-percentage="30"><i class="icon-graphic-design"></i>
-                  <h4>Graphic Design</h4></li>
-                <li data-percentage="75"><i class="icon-mockup"></i>
-                  <h4>Mockup</h4></li>
-                <li data-percentage="65"><i class="icon-front-end-programing"></i>
-                  <h4>Front-end Programing</h4></li>
-                <li data-percentage="75"><i class="icon-3d-animation"></i>
-                  <h4>3D Animation</h4></li>
-                <li data-percentage="70"><i class="icon-flash-animation"></i>
-                  <h4>Flash Animation</h4></li>
-              </ul>
-            </div>
-            <div class="barChart technologies">
-              <h3>Technologies</h3>
-              <ul>
-                <li data-percentage="90"><i class="icon-html"></i>
-                  <h4>HTML 4/5</h4></li>
-                <li data-percentage="80"><i class="icon-css"></i>
-                  <h4>CSS 2/3</h4></li>
-                <li data-percentage="60"><i class="icon-jquery"></i>
-                  <h4>jQuery</h4></li>
-                <li data-percentage="70"><i class="icon-flash"></i>
-                  <h4>Flash / ActionScript2</h4></li>
-                <li data-percentage="85"><i class="icon-photoshop"></i>
-                  <h4>Photoshop</h4></li>
-                <li data-percentage="45"><i class="icon-illustrator"></i>
-                  <h4>Illustrator</h4></li>
-                <li data-percentage="90"><i class="icon-dreamweaver"></i>
-                  <h4>Dreamweaver</h4></li>
-                <li data-percentage="75"><i class="icon-3ds-max"></i>
-                  <h4>3DS Max</h4></li>
-                <li data-percentage="65"><i class="icon-maya"></i>
-                  <h4>Maya</h4></li>
-              </ul>
-            </div>
-          </canvas>
-        </div>
-      </div>
-      <div class="section aboutDiv" data-section="#about">
-        <div class="slideContent">
-          <div class="slideHeading">
-            <h1>About Me</h1>
-            <h2><i class="icon-test-tube icon-clear"></i>How do I think about ...</h2>
-          </div>
-          <article>
-            <h3><i class="icon-target"></i>Objective</h3>
-            <p>A creative and responsible design position with a dynamic company where I may contribute my professional experience and high work efficiency.</p>
-          </article>
-          <article>
-            <h3><i class="icon-shield"></i>Professional Qualities</h3>
-            <ul>
-              <li>Excellent design skills that have highly helped to build competitive web applications and to offer an in-depth knowledge of successful solution on cross-platform development.</li>
-              <li>Able to effectively communicate technical issues on interaction and concepts with programers.</li>
-              <li>Always thinking about how to enhance the professional knowledge and apply to the business in order to bring about “Customer Satisfaction&quot;.</li>
+        </nav>
+      </header>
+      <section class="mainContent">
+        <div class="section homeDiv" data-section="#home">
+          <div class="slideContent">
+            <h1 class="home-title">Senior Web Designer</h1>
+            <h2 class="home-title-sub">- over 5 Yrs. Exp.</h2>
+            <ul class="home-statistics">
+              <li data-num="13">
+                <p>0</p>
+                Years of Experience
+              </li>
+              <li data-num="28">
+                <p>0</p>
+                Clients Served
+              </li>
+              <li data-num="170">
+                <p>0</p>
+                Completed Projects
+              </li>
             </ul>
-          </article>
-          <canvas id="timelineChart">
+            <i class="icon-arrow-down icon-clear scrollDown"></i>
+          </div>
+        </div>
+        <div class="section worksDiv" data-section="#works">
+          <div class="slideContent">
+            <div class="slideHeading">
+              <h1>My Works</h1>
+              <h2><i class="icon-test-tube icon-clear"></i>What did I do?</h2>
+            </div>
+            <div class="blinkfeed">
+              <!--單格圖片規格：寬200px,高>200px-->
+              <!--width2圖片規格：寬404px,高200px-->
+              <!--height2圖片規格：寬200px,高>404px-->
+              <!--width2height2圖片規格：寬>404px,高>404px-->
+              <figure class="thumb height2" data-project="très vous">
+                <a href="ajax-tresvous.htm" class="thumbLink"
+                  ><img
+                    srcset="
+                      upload/works/2019/tresvous-thumb@200.png 200w,
+                      upload/works/2019/tresvous-thumb@400.png 400w,
+                      upload/works/2019/tresvous-thumb@600.png 600w,
+                      upload/works/2019/tresvous-thumb@800.png 800w
+                    "
+                    alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="486團購">
+                <a href="ajax-486shop.htm" class="thumbLink"
+                  ><img
+                    srcset="
+                      upload/works/2018/486shop-thumb@200.png 200w,
+                      upload/works/2018/486shop-thumb@400.png 400w,
+                      upload/works/2018/486shop-thumb@600.png 600w,
+                      upload/works/2018/486shop-thumb@800.png 800w
+                    "
+                    alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="永豐餘生技(mobile)">
+                <a href="ajax-green-n-safe-mobile-2016.htm" class="thumbLink"
+                  ><img
+                    srcset="
+                      upload/works/2016/green-n-safe-mobile-thumb.png    1x,
+                      upload/works/2016/green-n-safe-mobile-thumb@2x.png 2x
+                    "
+                    alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="台灣大車隊">
+                <a href="ajax-taiwantaxi-mobile-2015.htm" class="thumbLink"
+                  ><img
+                    src="upload/works/2015/taiwantaxi-mobile-thumb.png"
+                    alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="京站Qsquare Official">
+                <a href="ajax-qsquare-mobile-2015.htm" class="thumbLink"
+                  ><img src="upload/works/2015/qsquare-mobile-thumb.png" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb width2" data-project="永豐餘生技 E-commerce">
+                <a href="ajax-green-n-safe-2015.htm" class="thumbLink"
+                  ><img src="upload/works/2015/green-n-safe-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb width2" data-project="台北貿易 Official">
+                <a href="ajax-tpetrade.htm" class="thumbLink"
+                  ><img src="upload/works/2014/tpetrade-thumb.png" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb width2" data-project="台灣山葉機車 Official">
+                <a href="ajax-yamaha.htm" class="thumbLink"
+                  ><img src="upload/works/2014/yamaha-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="聯合發行 Official">
+                <a href="ajax-udc.htm" class="thumbLink"
+                  ><img src="upload/works/2013/udc_thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb width2" data-project="荖藤酒窖 Official">
+                <a href="ajax-laoteng.htm" class="thumbLink"
+                  ><img src="upload/works/2013/laoteng_thumb.png" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="安聯人壽 Event">
+                <a href="ajax-allianzCourage.htm" class="thumbLink"
+                  ><img src="upload/works/2012/allianzCourage_thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="安聯人壽 Event">
+                <a href="ajax-allianzSummer.htm" class="thumbLink"
+                  ><img src="upload/works/2012/allianzSummer_thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="匯豐汽車 Event">
+                <a href="ajax-30888hot.htm" class="thumbLink"
+                  ><img src="upload/works/2012/30888hot_thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="中古車代理商 Template">
+                <a href="ajax-carAgent.htm" class="thumbLink"
+                  ><img src="upload/works/2011/carAgent-thumb.png" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb height2" data-project="匯豐汽車 Official">
+                <a href="ajax-fmc.htm" class="thumbLink"
+                  ><img src="upload/works/2010/fmc-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="京站時尚廣場 Official">
+                <a href="ajax-qsquare.htm" class="thumbLink"
+                  ><img src="upload/works/2009/qsquare-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="摩斯漢堡 Official">
+                <a href="ajax-mosburger.htm" class="thumbLink"
+                  ><img src="upload/works/2009/mosburger-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="SUM賞車網 Official">
+                <a href="ajax-sum.htm" class="thumbLink"
+                  ><img src="upload/works/2009/sum-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="AMS Official">
+                <a href="ajax-ams.htm" class="thumbLink"
+                  ><img src="upload/works/2008/ams-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb width2" data-project="神腦國際 Official">
+                <a href="ajax-senao.htm" class="thumbLink"
+                  ><img src="upload/works/2008/senao-thumb.jpg" alt=""
+                /></a>
+              </figure>
+              <figure class="thumb" data-project="瀚荃集團 Intranet">
+                <a href="ajax-cvilux.htm" class="thumbLink"
+                  ><img src="upload/works/2008/cvilux-thumb.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section clientsDiv" data-section="#clients">
+          <div class="slideContent">
+            <div class="slideHeading">
+              <h1>Clients</h1>
+              <h2><i class="icon-test-tube icon-clear"></i>From A to Z</h2>
+            </div>
+            <ul>
+              <li><i class="clients-allianz clients-2x">安聯人壽</i></li>
+              <li><i class="clients-cooler-master">Cooler Master</i></li>
+              <li><i class="clients-cvilux">瀚荃企業</i></li>
+              <li><i class="clients-ikea clients-2x">IKEA</i></li>
+              <li><i class="clients-mitsui-chemicals">三井化學</i></li>
+              <li>
+                <i class="clients-mitsubishi-motors">Mitsubishi Motors</i>
+              </li>
+              <li>
+                <i class="clients-mercedes-benz clients-3x">Mercedes-Benz</i>
+              </li>
+              <li><i class="clients-merrycafe">聖瑪莉</i></li>
+              <li><i class="clients-mos-burger">摩斯漢堡</i></li>
+              <li><i class="clients-neogence clients-2x">霓淨思</i></li>
+              <li><i class="clients-nobel clients-2x">諾貝爾醫療集團</i></li>
+              <li><i class="clients-pelican clients-2x">宅配通</i></li>
+              <li>
+                <i class="clients-qsquare clients-2x">Q Square京站時尚廣場</i>
+              </li>
+              <li>
+                <i class="clients-royal-host clients-2x">樂雅樂家庭餐廳t</i>
+              </li>
+              <li><i class="clients-rt-mart clients-2x">大潤發</i></li>
+              <li><i class="clients-save">SAVE認證車</i></li>
+              <li><i class="clients-senao">神腦國際</i></li>
+              <li><i class="clients-use">USE</i></li>
+              <li><i class="clients-verico">華譽國際</i></li>
+              <li><i class="clients-wayfong clients-2x">唯豐肉鬆</i></li>
+              <li>
+                <i class="clients-yamaha-motors clients-2x">Yamaha Motors</i>
+              </li>
+              <li><i class="clients-zynet clients-2x">Zynet</i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section skillsDiv" data-section="#skills">
+          <div class="slideContent">
+            <div class="slideHeading">
+              <h1>Skills</h1>
+              <h2>
+                <i class="icon-test-tube icon-clear"></i>What I could do is ...
+              </h2>
+            </div>
+            <canvas id="ringChart">
+              <div class="barChart fields">
+                <h3>Fields</h3>
+                <ul>
+                  <li data-percentage="90">
+                    <i class="icon-web-visiual-design"></i>
+                    <h4>Web Visiual Design</h4>
+                  </li>
+                  <li data-percentage="80">
+                    <i class="icon-responsive-web-design"></i>
+                    <h4>Responsive Web Design</h4>
+                  </li>
+                  <li data-percentage="60">
+                    <i class="icon-single-page-application"></i>
+                    <h4>Single Page Application</h4>
+                  </li>
+                  <li data-percentage="85">
+                    <i class="icon-user-experience"></i>
+                    <h4>User eXperience</h4>
+                  </li>
+                  <li data-percentage="30">
+                    <i class="icon-graphic-design"></i>
+                    <h4>Graphic Design</h4>
+                  </li>
+                  <li data-percentage="75">
+                    <i class="icon-mockup"></i>
+                    <h4>Mockup</h4>
+                  </li>
+                  <li data-percentage="65">
+                    <i class="icon-front-end-programing"></i>
+                    <h4>Front-end Programing</h4>
+                  </li>
+                  <li data-percentage="75">
+                    <i class="icon-3d-animation"></i>
+                    <h4>3D Animation</h4>
+                  </li>
+                  <li data-percentage="70">
+                    <i class="icon-flash-animation"></i>
+                    <h4>Flash Animation</h4>
+                  </li>
+                </ul>
+              </div>
+              <div class="barChart technologies">
+                <h3>Technologies</h3>
+                <ul>
+                  <li data-percentage="90">
+                    <i class="icon-html"></i>
+                    <h4>HTML 4/5</h4>
+                  </li>
+                  <li data-percentage="80">
+                    <i class="icon-css"></i>
+                    <h4>CSS 2/3</h4>
+                  </li>
+                  <li data-percentage="60">
+                    <i class="icon-jquery"></i>
+                    <h4>jQuery</h4>
+                  </li>
+                  <li data-percentage="70">
+                    <i class="icon-flash"></i>
+                    <h4>Flash / ActionScript2</h4>
+                  </li>
+                  <li data-percentage="85">
+                    <i class="icon-photoshop"></i>
+                    <h4>Photoshop</h4>
+                  </li>
+                  <li data-percentage="45">
+                    <i class="icon-illustrator"></i>
+                    <h4>Illustrator</h4>
+                  </li>
+                  <li data-percentage="90">
+                    <i class="icon-dreamweaver"></i>
+                    <h4>Dreamweaver</h4>
+                  </li>
+                  <li data-percentage="75">
+                    <i class="icon-3ds-max"></i>
+                    <h4>3DS Max</h4>
+                  </li>
+                  <li data-percentage="65">
+                    <i class="icon-maya"></i>
+                    <h4>Maya</h4>
+                  </li>
+                </ul>
+              </div>
+            </canvas>
+          </div>
+        </div>
+        <div class="section aboutDiv" data-section="#about">
+          <div class="slideContent">
+            <div class="slideHeading">
+              <h1>About Me</h1>
+              <h2>
+                <i class="icon-test-tube icon-clear"></i>How do I think about
+                ...
+              </h2>
+            </div>
             <article>
-              <h3><i class="icon-time"></i>Timeline</h3>
+              <h3><i class="icon-target"></i>Objective</h3>
+              <p>
+                A creative and responsible design position with a dynamic
+                company where I may contribute my professional experience and
+                high work efficiency.
+              </p>
+            </article>
+            <article>
+              <h3><i class="icon-shield"></i>Professional Qualities</h3>
               <ul>
                 <li>
-                  <p class="time">Apr 2004-Present</p>
-                  <h4>Senior Web Designer</h4>
-                  <p class="com">FORTUNE MOTORS Co.,Ltd.</p>
-                  <p class="desc">Was responsible for the layout and UI design and HTML/CSS as the web designer. Clients included Mercedes-Benz, Allianz, Neogence, Qsquare, MOS Burger...</p>
+                  Excellent design skills that have highly helped to build
+                  competitive web applications and to offer an in-depth
+                  knowledge of successful solution on cross-platform
+                  development.
                 </li>
                 <li>
-                  <p class="time">2003-2004</p>
-                  <h4>Studying in Graduate School</h4>
-                  <p class="com">National Taiwan University, Taiwan</p>
-                  <p class="desc">Attended</p>
+                  Able to effectively communicate technical issues on
+                  interaction and concepts with programers.
                 </li>
                 <li>
-                  <p class="time">2000-2003</p>
-                  <h4>CG Designer</h4>
-                  <p class="com">SUNNET Technology Co.,Ltd.</p>
-                  <p class="desc">Implementing modeling, fx, lighting, rendering and CG animation for the computer game “Thunder Area”.</p>
-                </li>
-                <li>
-                  <p class="time">1998-2000</p>
-                  <h4>To Serve as A Soldier</h4>
-                  <p class="com"></p>
-                  <p class="desc"></p>
-                </li>
-                <li>
-                  <p class="time">1994-1998</p>
-                  <h4>Bachelor of Arts in Industrial Design</h4>
-                  <p class="com">National CHENG KUNG University, Taiwan</p>
-                  <p class="desc">Graduated: Jun 1994</p>
+                  Always thinking about how to enhance the professional
+                  knowledge and apply to the business in order to bring about
+                  “Customer Satisfaction&quot;.
                 </li>
               </ul>
             </article>
-          </canvas>
+            <canvas id="timelineChart">
+              <article>
+                <h3><i class="icon-time"></i>Timeline</h3>
+                <ul>
+                  <li>
+                    <p class="time">Apr 2004-Present</p>
+                    <h4>Senior Web Designer</h4>
+                    <p class="com">FORTUNE MOTORS Co.,Ltd.</p>
+                    <p class="desc">
+                      Was responsible for the layout and UI design and HTML/CSS
+                      as the web designer. Clients included Mercedes-Benz,
+                      Allianz, Neogence, Qsquare, MOS Burger...
+                    </p>
+                  </li>
+                  <li>
+                    <p class="time">2003-2004</p>
+                    <h4>Studying in Graduate School</h4>
+                    <p class="com">National Taiwan University, Taiwan</p>
+                    <p class="desc">Attended</p>
+                  </li>
+                  <li>
+                    <p class="time">2000-2003</p>
+                    <h4>CG Designer</h4>
+                    <p class="com">SUNNET Technology Co.,Ltd.</p>
+                    <p class="desc">
+                      Implementing modeling, fx, lighting, rendering and CG
+                      animation for the computer game “Thunder Area”.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="time">1998-2000</p>
+                    <h4>To Serve as A Soldier</h4>
+                    <p class="com"></p>
+                    <p class="desc"></p>
+                  </li>
+                  <li>
+                    <p class="time">1994-1998</p>
+                    <h4>Bachelor of Arts in Industrial Design</h4>
+                    <p class="com">National CHENG KUNG University, Taiwan</p>
+                    <p class="desc">Graduated: Jun 1994</p>
+                  </li>
+                </ul>
+              </article>
+            </canvas>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer id="footer" class="footer">
-      <p>&copy;2013&nbsp;Yisen Liu All rights reserved.</p>
-      <ul>
-        <li>
-          <a href="http://www.facebook.com/yisen838" target="_blank">
-            <span><i class="icon-facebook"></i></span>
-            <p>Facebook</p>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:yisenliu@gmail.com" target="_blank">
-            <span><i class="icon-email"></i></span>
-            <p>yisenliu@gmail.com</p>
-          </a>
-        </li>
-        <li>
-          <a href="tel:0952-460-938">
-            <span><i class="icon-phone"></i></span>
-            <p>0952-460-938</p>
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-  <div id="fullscr">
-    <a href="javascript:;" class="closeBtn"><i class="icon-close icon-2x"></i></a>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-  <script>
-    window.Modernizr || document.write('<script src="plugin/modernizr-2.6.2.js"><\/script>');
-
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="plugin/jquery/jquery-1.8.3.min.js"><\/script>');
-
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
-  <script>
-    $.Isotope || document.write('<script src="plugin/jquery/isotope/jquery.isotope.min.js"><\/script>');
-
-  </script>
-  <script src="js/app.min.js"></script>
-</body>
-
+      </section>
+      <footer id="footer" class="footer">
+        <p>&copy;2013&nbsp;Yisen Liu All rights reserved.</p>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/yisen838" target="_blank">
+              <span><i class="icon-facebook"></i></span>
+              <p>Facebook</p>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:yisenliu@gmail.com" target="_blank">
+              <span><i class="icon-email"></i></span>
+              <p>yisenliu@gmail.com</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:0952-460-938">
+              <span><i class="icon-phone"></i></span>
+              <p>0952-460-938</p>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div id="fullscr">
+      <a href="javascript:;" class="closeBtn"
+        ><i class="icon-close icon-2x"></i
+      ></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script>
+      window.Modernizr ||
+        document.write('<script src="plugin/modernizr-2.6.2.js"><\/script>');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="plugin/jquery/jquery-1.8.3.min.js"><\/script>'
+        );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
+    <script>
+      $.Isotope ||
+        document.write(
+          '<script src="plugin/jquery/isotope/jquery.isotope.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
